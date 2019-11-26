@@ -1,0 +1,19 @@
+- Criar grupo IAM - AdminstratorsContainers
+	-com politica de AdministratorAccess
+	-criar usuario
+	-adicionar usuario no grupo
+	-atrubuir uma senha para esse usuario
+- Criar keypair para acessar instancias de container
+- Acessar ECS - criar cluster
+	- Criar taskdefinition
+	- Configurar servicos - executar e manter um numero de instancias para uma taskdefinition, ou seja distribuir minha task pelo cluster. E vai manter elas executando simultaneamente. posso criar um ELB
+	-
+
+cluster-a{
+service: [
+	{
+	 task:{taskdefinition:"xx"}
+	}
+]
+
+}
